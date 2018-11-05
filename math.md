@@ -34,6 +34,8 @@ $$(\csc{x})' = -\csc{x} \cot{x}$$
 $$(\arcsin{x})' = \frac{1}{\sqrt{1-x^2}}$$ 
 $$(\arccos{x})' = - \frac{1}{\sqrt{1-x^2}}$$
 $$(\arctan{x})' = \frac{1}{1+x^2}$$ 
-$$(\arccot{x})' = -\frac{1}{1+x^2}$$
+$$(\mathrm{arccot}\,{x})' = -\frac{1}{1+x^2}$$
 $$[\ln{(x + \sqrt{x^2+1})}]' = \frac{1}{\sqrt{x^2+1}}$$ 
 $$[\ln{(x + \sqrt{x^2-1})}]' = \frac{1}{\sqrt{x^2-1}}$$
+# 微分方程
+$$ y'+p(x)y=q(x) \rightarrow y=e^{-\int{p(x)\,\mathrm{d}x}}(\int{e^{\int{p(x)\,\mathrm{d}x}}q{(x)\,\mathrm{d}x}}+C) $$
