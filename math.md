@@ -28,7 +28,7 @@ $$\sqrt{1+x} = 1+ \frac{x}{2} - \frac{x^2}{8} + o(x^2)$$
 <!-- $$\lim_{x \to ?} \frac{f(x)}{g(x)} \xlongequal [\frac{\infty}{\infty}] {\frac{0}{0}} \lim_{x \to ?} \frac{f'(x)}{g'(x)}$$ -->
 # 导数
 $$(\tan{x})' = \sec^2{x}$$
-$$(cot{x})' = -\csc^2{x}$$
+$$(\cot{x})' = -\csc^2{x}$$
 $$(\sec{x})' = \sec{x} \tan{x}$$ 
 $$(\csc{x})' = -\csc{x} \cot{x}$$
 $$(\arcsin{x})' = \frac{1}{\sqrt{1-x^2}}$$ 
@@ -39,3 +39,5 @@ $$[\ln{(x + \sqrt{x^2+1})}]' = \frac{1}{\sqrt{x^2+1}}$$
 $$[\ln{(x + \sqrt{x^2-1})}]' = \frac{1}{\sqrt{x^2-1}}$$
 # 微分方程
 $$ y'+p(x)y=q(x) \rightarrow y=e^{-\int{p(x)\,\mathrm{d}x}}(\int{e^{\int{p(x)\,\mathrm{d}x}}q{(x)\,\mathrm{d}x}}+C) $$
+$$ y''+py'+qy=0 \rightarrow \lambda^2+p\lambda+q $$
+$$ 1. C_1 e^{$$
