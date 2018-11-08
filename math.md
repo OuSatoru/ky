@@ -39,5 +39,15 @@ $$[\ln{(x + \sqrt{x^2+1})}]' = \frac{1}{\sqrt{x^2+1}}$$
 $$[\ln{(x + \sqrt{x^2-1})}]' = \frac{1}{\sqrt{x^2-1}}$$
 # 微分方程
 $$ y'+p(x)y=q(x) \rightarrow y=e^{-\int{p(x)\,\mathrm{d}x}}(\int{e^{\int{p(x)\,\mathrm{d}x}}q{(x)\,\mathrm{d}x}}+C) $$
+<br>
+
 $$ y''+py'+qy=0 \rightarrow \lambda^2+p\lambda+q $$
-$$ 1. C_1 e^{$$
+$$ 齐次通解： C_1 e^{\lambda_1}+C_2 e^{\lambda_2} $$ 
+$$ (C_1 + C_2x)e^{\lambda_1} $$
+$$ \alpha \pm \beta i \rightarrow e^{\alpha x}(C_1 \cos \beta x + C_2\sin \beta x) $$
+<br>
+
+$$ y''+py'+qy=e^{\alpha x}p_m(x) \rightarrow y^*=e^{\alpha x}q_m(x)x^k$$
+$$ k为\alpha与\lambda_1 \lambda_2相同的个数 $$
+$$ y''+py'+qy=e^{\alpha x}（p_m(x) \cos \beta x + p_n(x)\sin \beta x)\rightarrow y^*=e^{\alpha x}(q_l(x)\cos \beta x + q_l(x)\sin \beta x)x^k $$
+$$ \alpha \beta 与齐次相同k=1, else, k=0 $$
