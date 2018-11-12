@@ -51,3 +51,14 @@ $$ y''+py'+qy=e^{\alpha x}p_m(x) \rightarrow y^*=e^{\alpha x}q_m(x)x^k$$
 $$ k为\alpha与\lambda_1 \lambda_2相同的个数 $$
 $$ y''+py'+qy=e^{\alpha x}（p_m(x) \cos \beta x + p_n(x)\sin \beta x)\rightarrow y^*=e^{\alpha x}(q_l(x)\cos \beta x + q_l(x)\sin \beta x)x^k $$
 $$ \alpha \beta 与齐次相同k=1, else, k=0 $$
+
+# 矩阵
+$$ \bm{AB=E,AB=BA} $$
+$$ \bm{AA^*=A^*A=|A|E} $$
+$$ k\bm{EA}=\bm{A}k\bm{E} $$
+$$ \bm{A}^{-1}=\frac{1}{|\bm{A}|}\bm{A^*} $$
+$$|\bm{A}|=|\bm{A}|^{n-1}$$
+$$(k\bm{A})^n=k^{n-1}\bm{A}^*$$
+$$(\bm{A}^T)^*=(\bm{A}^*)^T$$
+$$-1,*,T$$
+$$(\bm{A}^*)^*=|\bm{A}|^{n-2}\bm{A}$$
