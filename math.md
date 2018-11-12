@@ -53,12 +53,24 @@ $$ y''+py'+qy=e^{\alpha x}（p_m(x) \cos \beta x + p_n(x)\sin \beta x)\rightarro
 $$ \alpha \beta 与齐次相同k=1, else, k=0 $$
 
 # 矩阵
-$$ \bm{AB=E,AB=BA} $$
-$$ \bm{AA^*=A^*A=|A|E} $$
+$$ \bm{AB}=\bm{E},\bm{AB}=\bm{BA} $$
+$$ \bm{AA}^*=\bm{A}^*\bm{A}=|\bm{A}|\bm{E} $$
 $$ k\bm{EA}=\bm{A}k\bm{E} $$
 $$ \bm{A}^{-1}=\frac{1}{|\bm{A}|}\bm{A^*} $$
 $$|\bm{A}|=|\bm{A}|^{n-1}$$
-$$(k\bm{A})^n=k^{n-1}\bm{A}^*$$
+$$(k\bm{A})^*=k^{n-1}\bm{A}^*$$
 $$(\bm{A}^T)^*=(\bm{A}^*)^T$$
 $$-1,*,T$$
 $$(\bm{A}^*)^*=|\bm{A}|^{n-2}\bm{A}$$
+$$
+    \bm{A}=\left[ 
+    \begin{matrix}
+    a & b\\
+    c & d
+    \end{matrix}
+    \right], \bm{A}^{-1}=\frac{1}{ad-bc}\left[ \begin{matrix}
+    d & -b\\
+    -c & a
+    \end{matrix}
+    \right]
+$$
