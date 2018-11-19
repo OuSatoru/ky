@@ -47,7 +47,7 @@ $$ (C_1 + C_2x)e^{\lambda_1} $$
 $$ \alpha \pm \beta i \rightarrow e^{\alpha x}(C_1 \cos \beta x + C_2\sin \beta x) $$
 <br>
 
-$$ y''+py'+qy=e^{\alpha x}p_m(x) \rightarrow y^*=e^{\alpha x}q_m(x)x^k$$
+$$ y''+py'+qy=e^{\alpha x}p_m(x) \rightarrow y^*=e^{\alpha x}q_m(x)x^k $$
 $$ k为\alpha与\lambda_1 \lambda_2相同的个数 $$
 $$ y''+py'+qy=e^{\alpha x}（p_m(x) \cos \beta x + p_n(x)\sin \beta x)\rightarrow y^*=e^{\alpha x}(q_l(x)\cos \beta x + q_l(x)\sin \beta x)x^k $$
 $$ \alpha \beta 与齐次相同k=1, else, k=0 $$
@@ -61,7 +61,7 @@ $$|\bm{A}|=|\bm{A}|^{n-1}$$
 $$(k\bm{A})^*=k^{n-1}\bm{A}^*$$
 $$(\bm{A}^T)^*=(\bm{A}^*)^T$$
 $$-1,*,T$$
-$$(\bm{A}^*)^*=|\bm{A}|^{n-2}\bm{A}$$
+$$(\bm{A}^*)^*=|\bm{A}|^{n-2}\bm{A} $$
 $$
     \bm{A}=\left[ 
     \begin{matrix}
