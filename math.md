@@ -74,3 +74,18 @@ $$
     \end{matrix}
     \right]
 $$
+$$ 0 \le r(\bm{A}_{m \times n}) \le \min\{m,n\}, r(\bm{A})=0 \Leftrightarrow \bm{A}=\bm{O} $$
+$$ k \ne 0, r(k\bm{A}) = r(\bm{A}) $$
+$$ \forall\bm{A}_{m \times n}, r(\bm{A})=r(\bm{A}^T)=r(\bm{A}\bm{A}^T)=r(\bm{\bm{A}^T\bm{A}}) $$
+$$ \bm{A}_{m\times n} \Leftrightarrow r(\bm{A}^n)=r(\bm{A}^{n+1}) $$
+$$ \max\{r(\bm{A}),r(\bm{B})\} \le r(\bm{A}|\bm{B}) \le r(\bm{A})+r(\bm{B}) $$
+$$ r(\bm{A}+\bm{B}) \le r(\bm{A})+r(\bm{B}) $$
+$$ r(\bm{A}\bm{B}) \le \min\{ r(\bm{A}),r(\bm{B}) \} $$
+$$ 若\bm{A}\bm{B}=\bm{O}，则r(\bm{A})+r(\bm{B}) \le n, n为\bm{A}的列数 $$
+$$ 给\bm{A}_{m\times n},r(\bm{A}^*)=
+    \begin{cases}
+        n, r(\bm{A})=n\\
+        1, r(\bm{A})=n-1\\
+        0,r(\bm{A})\lt n-1
+    \end{cases}
+$$
