@@ -37,6 +37,8 @@ $$(\arctan{x})' = \frac{1}{1+x^2}$$
 $$(\mathrm{arccot}\,{x})' = -\frac{1}{1+x^2}$$
 $$[\ln{(x + \sqrt{x^2+1})}]' = \frac{1}{\sqrt{x^2+1}}$$ 
 $$[\ln{(x + \sqrt{x^2-1})}]' = \frac{1}{\sqrt{x^2-1}}$$
+# 定理
+$$ f(x),g(x)连续，g(x)不变号，\int_{a}^{b}f(x)g(x)\,\mathrm{d}x=f(\xi)\int_{a}^{b}g(x)\,\mathrm{d}x $$
 # 微分方程
 $$ y'+p(x)y=q(x) \rightarrow y=e^{-\int{p(x)\,\mathrm{d}x}}(\int{e^{\int{p(x)\,\mathrm{d}x}}q{(x)\,\mathrm{d}x}}+C) $$
 <br>
@@ -89,3 +91,4 @@ $$ 给\bm{A}_{m\times n},r(\bm{A}^*)=
         0,r(\bm{A})\lt n-1
     \end{cases}
 $$
+$$ \lambda_i 是n_i重根，n_i = n-r(\lambda_i E-A) $$
