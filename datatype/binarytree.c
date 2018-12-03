@@ -5,3 +5,12 @@
 二、实验内容 实现二叉树的遍历。
 三、基本要求 以二叉链表表示二叉树，实现二叉树先序遍历、中序遍历、后序遍历的递归算法；直接利用栈的基本操作，实现二叉树先序遍历的非递归算法。
 */
+
+#include <stdio.h>
+#include <stdlib.h>
+typedef char ElemType;
+
+typedef struct BiTNode {
+    ElemType data;
+    struct BiTNode *left, *right;
+}BiTNode, *BiTree;
