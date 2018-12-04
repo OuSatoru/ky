@@ -14,3 +14,20 @@ typedef struct BiTNode {
     ElemType data;
     struct BiTNode *left, *right;
 }BiTNode, *BiTree;
+
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
+}
+
+BiTree CreateBiTree() {
+    char ch;
+    scanf("%c", &ch);
+    BiTNode *node = (BiTNode *)malloc(sizeof(BiTNode));
+    if (ch == ' ') {
+        node = NULL;
+    }
+
+    return node;
+}
