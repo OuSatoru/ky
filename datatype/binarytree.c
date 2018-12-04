@@ -14,10 +14,14 @@ typedef struct BiTNode {
     ElemType data;
     struct BiTNode *left, *right;
 }BiTNode, *BiTree;
+BiTree CreateBiTree();
+void PreOrderTraverse(BiTNode *root);
 
 int main(int argc, char const *argv[])
 {
-    /* code */
+    BiTree root = CreateBiTree();
+    printf("%s\n", "sbsbsb");
+    PreOrderTraverse(root);
     return 0;
 }
 
@@ -25,9 +29,21 @@ BiTree CreateBiTree() {
     char ch;
     scanf("%c", &ch);
     BiTNode *node = (BiTNode *)malloc(sizeof(BiTNode));
-    if (ch == ' ') {
+    if (ch == '#') {
         node = NULL;
+    } else {
+        printf("recv: %c\n", ch);
+        node->data = ch;
+        node->left = CreateBiTree();
+        node->right = CreateBiTree();
     }
-
     return node;
+}
+
+void PreOrderTraverse(BiTNode *root) {
+    if (root) {
+        printf("%c ", root->data);
+        PreOrderTraverse(root->left);
+        PreOrderTraverse(root->right);
+    }
 }
