@@ -16,12 +16,21 @@ typedef struct BiTNode {
 }BiTNode, *BiTree;
 BiTree CreateBiTree();
 void PreOrderTraverse(BiTNode *root);
+void InOrderTraverse(BiTNode *root);
+void PostOrderTraverse(BiTNode *root);
+int CreateBiTree2(BiTree T);
 
 int main(int argc, char const *argv[])
 {
-    BiTree root = CreateBiTree();
-    printf("%s\n", "sbsbsb");
-    PreOrderTraverse(root);
+    // BiTree T;
+    // CreateBiTree2(T);
+    BiTree T = CreateBiTree();
+    printf("%s\n", "pre");
+    PreOrderTraverse(T);
+    printf("%s\n", "in");
+    InOrderTraverse(T);
+    printf("%s\n", "post");
+    PostOrderTraverse(T);
     return 0;
 }
 
@@ -29,7 +38,7 @@ BiTree CreateBiTree() {
     char ch;
     scanf("%c", &ch);
     BiTNode *node = (BiTNode *)malloc(sizeof(BiTNode));
-    if (ch == '#') {
+    if (ch == ' ' || ch == '\n') {
         node = NULL;
     } else {
         printf("recv: %c\n", ch);
@@ -40,10 +49,38 @@ BiTree CreateBiTree() {
     return node;
 }
 
+int CreateBiTree2(BiTree T) {
+    char ch;
+    scanf("%c", &ch);
+    if (ch == ' ') T = NULL;
+    else {
+        T->data = ch;
+        CreateBiTree2(T->left);
+        CreateBiTree2(T->right);
+    }
+    return 1;
+}
+
 void PreOrderTraverse(BiTNode *root) {
     if (root) {
         printf("%c ", root->data);
         PreOrderTraverse(root->left);
         PreOrderTraverse(root->right);
+    }
+}
+
+void InOrderTraverse(BiTNode *root) {
+    if (root) {
+        InOrderTraverse(root->left);
+        printf("%c ", root->data);
+        InOrderTraverse(root->right);
+    }
+}
+
+void PostOrderTraverse(BiTNode *root) {
+    if (root) {
+        PostOrderTraverse(root->left);
+        PostOrderTraverse(root->right);
+        printf("%c ", root->data);
     }
 }
